@@ -1,4 +1,3 @@
-/* Global styles */
 
 *,
 *::before,
@@ -20,8 +19,7 @@ ol,
 li,
 blockquote,
 fieldset {
-  margin: 0;
-  padding: 0;
+  gap: 0;
 }
 
 ul,
@@ -33,8 +31,6 @@ video {
   width: 100%;
 }
 
-/* Utility classes */
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -45,7 +41,6 @@ video {
   white-space: nowrap;
 }
 
-/* Styles */
 
 .page {
   display: flex;
@@ -225,8 +220,6 @@ video {
   color: #545050;
 }
 
-/* scrollbar-width removes scrollbar, but only works in Firefox */
-/* https://caniuse.com/?search=scrollbar-width */
 .content__list {
   position: relative;
   overflow-y: scroll;
@@ -234,8 +227,6 @@ video {
   scrollbar-width: none;
 }
 
-/* Removes scrollbar for most other browsers */
-/* https://caniuse.com/?search=webkit-scrollbar */
 .content__list::-webkit-scrollbar {
   display: none;
 }
@@ -266,13 +257,13 @@ video {
   outline: 1px solid #FFF;
 }
 
-.content__card-link_current {
-  background-color: #545050;
-}
-
 .content__video-card {
   display: flex;
   justify-content: space-between;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__video-card-title {
