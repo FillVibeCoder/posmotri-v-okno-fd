@@ -245,6 +245,7 @@ ol {
   overflow: auto;
 }
 
+
 .content__list-item:not(:last-child) {
   margin: 0 0 30px;
 }
